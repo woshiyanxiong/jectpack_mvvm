@@ -72,6 +72,7 @@
    ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8f7c77be61cb43e18a2c5b232e6dc5f8~tplv-k3u1fbpfcp-zoom-1.image)
 ### 5 更多介绍
    [掘金](https://juejin.im/post/6873448411727986701)
+   [csdn](https://blog.csdn.net/qq_30710615/article/details/108649677)
 ### 6 最后
    后续会逐渐完善，旨建立一个轻量级的mvvm开发框架，希望会给你带来帮助，也喜欢可以留下你的宝贵意见
    #### 感谢[MVVMLin](https://github.com/AleynP/MVVMLin)
