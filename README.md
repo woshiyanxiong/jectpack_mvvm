@@ -4,9 +4,11 @@
 -  基于MVVM模式用了 kotlin+协程+retrofit+livedata+DataBinding，是基于Androidx
   主要封装了BaseActivity、BaseFragment、BaseViewModel、BaseLifeViewModel，基于协程和rxjava网络请方式更加方便，可自由选择
 -  使用Rxjava 处理不好的话会有内存泄露的风险，这里使用AutoDispose，在Androidx中 activity和fragment中可以直接直接使用，但是在viewmodel中不能，所以在BaseLifeViewModel中是处理rxjava的封装
+
 ## 2020-5-8更新
-### 1. 移除之前的daggerAndroid 替换成daggerHint版本，模块代码更少，使用更加简单
-### 2. 增加常用扩展函数Extension.kt
+#### 1. 移除之前的daggerAndroid 替换成daggerHint版本，模块代码更少，使用更加简单
+#### 2. 增加常用扩展函数Extension.kt
+
 ## 开始使用
 ### 1.开启databinding，在app文件下build.gradle中引入
     dataBinding {
