@@ -15,6 +15,11 @@ class UserRepository @Inject internal constructor(private val apiService: BaseAp
      */
     suspend fun getNews(type: String): NewResponses = apiService.getNews(type)
 
+    /**
+     * RxJava请求
+     * @param type String
+     * @return Single<(com.yx.news.model.NewResponses..com.yx.news.model.NewResponses?)>
+     */
     fun getRxNews(type: String)=apiService.getRxNews(type).async()
 
 }

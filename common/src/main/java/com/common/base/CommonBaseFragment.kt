@@ -11,13 +11,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 
-import dagger.android.AndroidInjector
-import dagger.android.DispatchingAndroidInjector
-import dagger.android.support.AndroidSupportInjection
-import dagger.android.support.HasSupportFragmentInjector
-import io.reactivex.Observable
-import io.reactivex.subjects.BehaviorSubject
-import javax.inject.Inject
 
 abstract class CommonBaseFragment<VB : ViewDataBinding>: Fragment() {
 
@@ -33,7 +26,6 @@ abstract class CommonBaseFragment<VB : ViewDataBinding>: Fragment() {
 
     lateinit var binding: VB
     override fun onAttach(context: Context) {
-        AndroidSupportInjection.inject(this)
         super.onAttach(context)
 
     }

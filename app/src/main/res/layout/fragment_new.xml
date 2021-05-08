@@ -13,7 +13,6 @@
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:itmes="@{viewModel.itemNews}"
             android:id="@+id/recycle_view"/>
     </LinearLayout>
 

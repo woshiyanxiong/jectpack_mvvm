@@ -51,7 +51,8 @@ class NewViewModel @Inject constructor(application: Application) : BaseViewModel
         repository.getRxNews(type)
             .`as`(auto(this))
             .subscribes({
-
+                itemNews.clear()
+                itemNews.addAll(it.list)
             },{
 
             })

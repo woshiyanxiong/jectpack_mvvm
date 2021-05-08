@@ -7,13 +7,14 @@ import com.yx.news.R
 import com.yx.news.databinding.FragmentNewBinding
 import com.yx.news.di.FragmentScoped
 import com.yx.news.ui.adapter.NewAdapter
+import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
 /**
  *create by 2020/6/19
  *@author yx
  */
-@FragmentScoped
+@AndroidEntryPoint
 class NewFragment : CommonBaseFragment<FragmentNewBinding>() {
 
     @Inject

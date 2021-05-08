@@ -45,18 +45,6 @@ fun<T> Single<T>.single(): Single<T> = this.subscribeOn(Schedulers.io()).observe
 
 //fun<T> AutoDisposeConverter<T>.ad(pr: ScopeProvider): AutoDisposeConverter<T>? = AutoDispose.autoDisposable<T>(pr)
 
-fun Activity.navigateToActivity(c: Class<*>) {
-    val intent = Intent()
-    intent.setClass(this, c)
-    startActivity(intent)
-}
-
-fun Activity.navigateToActivity(c: Class<*>,bundle:Bundle) {
-    val intent = Intent()
-    intent.setClass(this, c)
-    intent.putExtra("bundle",bundle)
-    startActivity(intent)
-}
 
 @CheckReturnValue
 @SchedulerSupport(SchedulerSupport.NONE)

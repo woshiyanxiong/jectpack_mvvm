@@ -5,8 +5,10 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.common.base.BasePageAdapter
 import com.yx.news.ui.fragment.NewFragment
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_main.*
 //https://blog.csdn.net/qq243348167/article/details/103741986
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     var titleList = arrayListOf<String>("新闻"
         , "娱乐"

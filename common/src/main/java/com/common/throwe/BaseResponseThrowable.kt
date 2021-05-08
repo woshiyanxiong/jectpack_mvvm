@@ -2,7 +2,7 @@ package com.common.throwe
 
 /**
  * create by 2020/5/15
- *
+ * 错误封装自行实现业务逻辑
  * @author yx
  */
 class BaseResponseThrowable : Throwable {
